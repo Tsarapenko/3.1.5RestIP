@@ -6,7 +6,7 @@ getTableUser()
 function getTableUser() {
     tbody.empty()
 
-    fetch("http://localhost:8080/api/users")
+    fetch("/api/users")
 
         .then(res => res.json())
         .then(js => {
